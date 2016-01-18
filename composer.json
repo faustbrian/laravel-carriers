@@ -1,0 +1,15 @@
+{
+    "name": "draperstudio/laravel-carriers",
+    "description": "Seed and use draperstudioneat-mcc-mnc in Laravel.",
+    "require": {
+        "php": ">=5.5.9",
+        "draperstudio/laravel-service-provider": "~1.0",
+        "draperstudio/neat-mcc-mnc": "~1.0",
+        "illuminate/database": "~5.0|~5.1|~5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "DraperStudio\\Carriers\\": "src/"
+        }
+    }
+}
