@@ -4,8 +4,16 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
+/**
+ * Class CreateCarriersTable.
+ *
+ * @author DraperStudio <hello@draperstudio.tech>
+ */
 class CreateCarriersTable extends Migration
 {
+    /**
+     *
+     */
     public function up()
     {
         Schema::create('carriers', function (Blueprint $table) {
@@ -20,6 +28,9 @@ class CreateCarriersTable extends Migration
         });
     }
 
+    /**
+     *
+     */
     public function down()
     {
         Schema::dropIfExists('carriers');
