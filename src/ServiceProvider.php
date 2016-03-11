@@ -46,9 +46,10 @@ class ServiceProvider extends \DraperStudio\ServiceProvider\ServiceProvider
     public function provides()
     {
         return array_merge(parent::provides(), [
-            SeedCarriers::class
+            SeedCarriers::class,
         ]);
     }
+
     /**
      * Get the default package name.
      *

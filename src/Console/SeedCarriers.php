@@ -40,9 +40,6 @@ class SeedCarriers extends Command
         parent::__construct();
     }
 
-    /**
-     *
-     */
     public function fire()
     {
         DB::table('carriers')->delete();
