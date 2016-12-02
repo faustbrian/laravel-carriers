@@ -11,15 +11,13 @@ $ composer require faustbrian/laravel-carriers
 And then include the service provider within `app/config/app.php`.
 
 ``` php
-'providers' => [
-    'BrianFaust\Carriers\ServiceProvider'
-];
+BrianFaust\Carriers\CarriersServiceProvider::class
 ```
 
 To get started, you'll need to publish the vendor assets and migrate the carriers table:
 
 ```bash
-php artisan vendor:publish --provider="BrianFaust\Carriers\ServiceProvider" && php artisan migrate
+php artisan vendor:publish --provider="BrianFaust\Carriers\CarriersServiceProvider" && php artisan migrate
 ```
 
 Now you can seed the carriers into the database like this.
@@ -31,8 +29,7 @@ php artisan carriers:seed
 ## Usage
 
 ``` php
-$skeleton = new League\Skeleton();
-echo $skeleton->echoPhrase('Hello, League!');
+...
 ```
 
 ## Security
