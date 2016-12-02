@@ -12,8 +12,9 @@
 namespace BrianFaust\Carriers;
 
 use BrianFaust\Carriers\Console\SeedCarriers;
+use BrianFaust\ServiceProvider\ServiceProvider;
 
-class ServiceProvider extends \BrianFaust\ServiceProvider\ServiceProvider
+class CarriersServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
