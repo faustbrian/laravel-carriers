@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+declare(strict_types=1);
+
 namespace BrianFaust\Carriers\Console;
 
 use BrianFaust\Carriers\Models\Carrier;
@@ -30,7 +32,7 @@ class SeedCarriers extends Command
     /**
      * SeedCarriers constructor.
      */
-    public function __construct()
+    public function __construct(): void
     {
         parent::__construct();
     }
