@@ -23,9 +23,9 @@ declare(strict_types=1);
 namespace BrianFaust\Carriers;
 
 use BrianFaust\Carriers\Console\SeedCarriers;
-use BrianFaust\ServiceProvider\ServiceProvider;
+use BrianFaust\ServiceProvider\AbstractServiceProvider;
 
-class CarriersServiceProvider extends ServiceProvider
+class CarriersServiceProvider extends AbstractServiceProvider
 {
     /**
      * Bootstrap the application services.
