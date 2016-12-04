@@ -46,7 +46,7 @@ class SeedCarriers extends Command
         parent::__construct();
     }
 
-    public function fire()
+    public function fire(): void
     {
         DB::table('carriers')->delete();
 
@@ -64,7 +64,7 @@ class SeedCarriers extends Command
     /**
      * @return array
      */
-    protected function getArguments()
+    protected function getArguments(): array
     {
         return [];
     }
@@ -72,7 +72,7 @@ class SeedCarriers extends Command
     /**
      * @return array
      */
-    protected function getOptions()
+    protected function getOptions(): array
     {
         return [];
     }
