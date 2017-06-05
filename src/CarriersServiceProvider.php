@@ -1,55 +1,26 @@
 <?php
 
-
-
-declare(strict_types=1);
-
-
-
 namespace BrianFaust\Carriers;
 
-use BrianFaust\Carriers\Console\SeedCarriers;
-use BrianFaust\ServiceProvider\AbstractServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class CarriersServiceProvider extends AbstractServiceProvider
+class CarriersServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
      */
-    public function boot(): void
+    public function boot()
     {
-        $this->publishMigrations();
+        $this->publishes([
+            __DIR__.'/../database/migrations' => database_path('migrations'),
+        ], 'migrations');
     }
 
     /**
      * Register the application services.
      */
-    public function register(): void
+    public function register()
     {
-        parent::register();
-
-        $this->commands(SeedCarriers::class);
-    }
-
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
-    public function provides(): array
-    {
-        return array_merge(parent::provides(), [
-            SeedCarriers::class,
-        ]);
-    }
-
-    /**
-     * Get the default package name.
-     *
-     * @return string
-     */
-    public function getPackageName(): string
-    {
-        return 'carriers';
+        $this->commands(Console\Commands\SeedCarriers::class);
     }
 }

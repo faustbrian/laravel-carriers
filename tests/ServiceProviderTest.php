@@ -1,11 +1,5 @@
 <?php
 
-
-
-declare(strict_types=1);
-
-
-
 namespace BrianFaust\Tests\Carriers;
 
 use GrahamCampbell\TestBenchCore\ServiceProviderTrait;

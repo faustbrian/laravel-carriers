@@ -1,12 +1,6 @@
 <?php
 
-
-
-declare(strict_types=1);
-
-
-
-namespace BrianFaust\Carriers\Console;
+namespace BrianFaust\Carriers\Console\Commands;
 
 use BrianFaust\Carriers\Models\Carrier;
 use DB;
@@ -24,15 +18,7 @@ class SeedCarriers extends Command
      */
     protected $description = 'Command description.';
 
-    /**
-     * SeedCarriers constructor.
-     */
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
-    public function fire(): void
+    public function fire()
     {
         DB::table('carriers')->delete();
 
