@@ -11,9 +11,9 @@
 
 namespace BrianFaust\Carriers\Console\Commands;
 
-use BrianFaust\Carriers\Models\Carrier;
 use DB;
 use Illuminate\Console\Command;
+use BrianFaust\Carriers\Models\Carrier;
 
 class SeedCarriers extends Command
 {
