@@ -13,8 +13,8 @@ declare(strict_types=1);
 
 namespace BrianFaust\Carriers\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 
 class Carrier extends Model
 {
