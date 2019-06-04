@@ -1,12 +1,12 @@
 {
-    "name": "faustbrian/laravel-carriers",
+    "name": "artisanry/carriers",
     "description": "Seed and use mobile-codes in Laravel.",
-    "keywords": ["laravel", "framework", "Laravel-Carriers", "Laravel Carriers", "Brian Faust", "faustbrian"],
+    "keywords": ["laravel", "framework", "Laravel-Carriers", "Laravel Carriers"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
     }],
     "require": {
         "php": "^7.1",
@@ -21,12 +21,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Carriers\\": "src/"
+            "Artisanry\\Carriers\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Carriers\\": "tests"
+            "Artisanry\\Tests\\Carriers\\": "tests"
         }
     },
     "config": {
@@ -39,7 +39,7 @@
         },
         "laravel": {
             "providers": [
-                "BrianFaust\\Carriers\\CarriersServiceProvider"
+                "Artisanry\\Carriers\\CarriersServiceProvider"
             ]
         }
     },
