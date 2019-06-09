@@ -7,7 +7,7 @@
         "Laravel-Carriers",
         "Laravel Carriers"
     ],
-    "license": "MIT",
+    "license": "MPL-2.0",
     "authors": [
         {
             "name": "Brian Faust",
